@@ -19,7 +19,7 @@ const DB_URI =
 
 // Routes
 app.use('/api', userRoutes);
-app.use('/api/v1', require('./routes/otpRoutes.js'));
+app.use('/', require('./routes/otpRoutes.js'));
 
 
 // Start the server
