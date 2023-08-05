@@ -1,0 +1,95 @@
+// variables
+$primary-blue: #257391;
+$dk-blue: #14465e;
+$almost-white: #f3f6f7;
+
+// global 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $almost-white;
+  font-family: sans-serif; 
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+
+// side bar navigation
+.nav {
+  background-color: $primary-blue;
+  color: #fff;
+  float: left;
+  height: 100%;
+  position: fixed;
+  width: 225px;
+}
+
+.nav__brandbar {
+  background-color: $dk-blue;
+  // font-size: 1.25rem;
+  padding: 1.5rem;
+  // height: 75px;
+}
+
+.nav__links {
+  text-transform: uppercase;
+  
+  &:hover {
+    background-color: darken($primary-blue, 6%);
+  }
+  
+  a {
+    padding: 1.5rem;
+  }
+}
+
+// main content & tables
+
+.search-bar {
+  background-color: #fff;
+  padding: 1.5rem;
+  // height: 75px;
+}
+
+.main-content {
+  float: right;
+  width: calc(100% - 225px);
+  clear: none;
+}
+
+.channel-list {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+  max-width: 800px;
+}
+
+.channel-list__table {
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(12, 57, 78, .20);
+  width: 800px;
+  
+    thead {
+    border-bottom: 1px solid rgba(37, 115, 145, .10);
+    }
+
+  th, td {
+      padding: 1em;
+    }
+
+  th {
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+}
+
+.channel-list__table-row {
+  text-align: left;
+}
